@@ -39,7 +39,7 @@ const Home: NextPage<Props> = ({ data }) => {
 // Traer los datos de la API con getServerSideProps o getStaticProps
 export const getServerSideProps = async ({ locale }: { locale: string }) => {
 	// const baseUrl = process.env.BASE_URL;
-	const baseUrl = "ej-ecommerce.vercel.app"; // Cambiar por la url del proyecto una vez deployada la API
+	const baseUrl = "https://ej-ecommerce.vercel.app/"; // Cambiar por la url del proyecto una vez deployada la API
 
 	const response = await fetch(`${baseUrl}api/products/${locale}`);
 
